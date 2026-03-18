@@ -52,7 +52,9 @@
 
 ## 📦 下载与校验
 
-该仓库提供预编译二进制压缩包，不包含源码。
+该仓库提供预编译二进制发布，不包含源码。
+
+压缩包统一放在 [Releases](https://github.com/Strangenees/VulnScannerX-builds/releases) 页面，仓库根目录不再存放 `.zip` 文件。
 
 ### 可用构建产物
 
@@ -68,9 +70,13 @@
 
 每个压缩包内包含对应平台的可执行文件、`plugins/` 目录以及一份随包说明文档。
 
+当前正式版本：
+
+- [`v3.1.4`](https://github.com/Strangenees/VulnScannerX-builds/releases/tag/v3.1.4)
+
 ### SHA256
 
-仓库根目录提供 [`SHA256SUMS.txt`](./SHA256SUMS.txt)：
+仓库根目录保留 [`SHA256SUMS.txt`](./SHA256SUMS.txt)，同一文件也作为 Release 附件提供：
 
 ```text
 b903fd957cdae09faea73e0b446b8baa8e031213fb5dbea0461cfad97c8513b6  VulnScannerX-darwin-amd64.zip
@@ -85,6 +91,8 @@ d5f1bda65508e8b6e2c418c71650f3afa02591ea03c1ab297c1a66534385ab93  VulnScannerX-l
 Linux / macOS 可使用如下命令校验：
 
 ```bash
+curl -LO https://github.com/Strangenees/VulnScannerX-builds/releases/download/v3.1.4/VulnScannerX-linux-amd64.zip
+curl -LO https://github.com/Strangenees/VulnScannerX-builds/releases/download/v3.1.4/SHA256SUMS.txt
 sha256sum -c SHA256SUMS.txt
 ```
 
@@ -93,6 +101,7 @@ sha256sum -c SHA256SUMS.txt
 以下示例以 `Linux amd64` 包为例：
 
 ```bash
+curl -LO https://github.com/Strangenees/VulnScannerX-builds/releases/download/v3.1.4/VulnScannerX-linux-amd64.zip
 unzip VulnScannerX-linux-amd64.zip
 chmod +x VulnScannerX-linux-amd64
 ./VulnScannerX-linux-amd64 version
@@ -249,12 +258,7 @@ export VULNSCANNERX_SCF_PROXY_TOKEN="YourTokenHere"
 ```text
 .
 ├── README.md
-├── SHA256SUMS.txt
-├── VulnScannerX-darwin-amd64.zip
-├── VulnScannerX-darwin-arm64.zip
-├── VulnScannerX-linux-386.zip
-├── VulnScannerX-linux-amd64.zip
-├── VulnScannerX-linux-arm64.zip
-├── VulnScannerX-windows-386.zip
-└── VulnScannerX-windows-amd64.zip
+└── SHA256SUMS.txt
 ```
+
+二进制压缩包请从 Releases 页面下载。
