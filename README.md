@@ -72,27 +72,27 @@
 
 当前正式版本：
 
-- [`v3.1.9`](https://github.com/Strangenees/VulnScannerX-builds/releases/tag/v3.1.9)
+- [`v3.1.10`](https://github.com/Strangenees/VulnScannerX-builds/releases/tag/v3.1.10)
 
 ### SHA256
 
 仓库根目录保留 [`SHA256SUMS.txt`](./SHA256SUMS.txt)，同一文件也作为 Release 附件提供：
 
 ```text
-df3531e007b7679d4b817adb5591684dc1d59cc94e60e913f18503b0e97d28ed  VulnScannerX-darwin-amd64.zip
-4725cc89c9ce4676b1340a37f873ca79d081a35d02d5700aca041793372192e1  VulnScannerX-darwin-arm64.zip
-636e5c48cc0618457f551938262c99e0d7a72595ab07db9d3bdc51a31ca72c07  VulnScannerX-linux-386.zip
-a98c355c5d6da95f95ba63f5712cfa6f9a6fab1de8ba5121e1e70905e74b7ea1  VulnScannerX-linux-amd64.zip
-7e5b7bdbcf3df4becb1a99ba3e26088467fa161adafa57a5be71597503c913ec  VulnScannerX-linux-arm64.zip
-6138834549bbd31389af4e8b117b4f0f14f318c11e0400a4009c3ca9834523d0  VulnScannerX-windows-386.zip
-d46306ad0215dc08a2fe7df5ff85006e75d2243049562757bc501c971b3d01af  VulnScannerX-windows-amd64.zip
+490a3bd3f55a6528b8a0d8c137d6cdd90da93ec17ef667596e958814b7bf9c9d  VulnScannerX-darwin-amd64.zip
+89967af7ed6835d87a2b7c1f48bb2983ab78365a2ec7cc9c0f3f4bb893e782e3  VulnScannerX-darwin-arm64.zip
+9562cde0d5d50e25ba1577df63c282cfc438f54fa763cd34f0fc51fa1a9dd769  VulnScannerX-linux-386.zip
+03c5f5861892a754f0faef4f0d1dc9affd482ddbd4202a19de67d6ad137d1b7c  VulnScannerX-linux-amd64.zip
+f39730f75306de29c7ec5884e8aa3b7eec811ca44b054ddb87531de8e783fbd6  VulnScannerX-linux-arm64.zip
+c8d49ebb3b7b2ebb2f2db88fd2e7cad13f43c3b98558bf969f751ab251e15d9b  VulnScannerX-windows-386.zip
+bd87ac013f60d3b7040b9abd113c35e1c04b58578c093702bb51eb09a8044cf6  VulnScannerX-windows-amd64.zip
 ```
 
 Linux / macOS 可使用如下命令校验：
 
 ```bash
-curl -LO https://github.com/Strangenees/VulnScannerX-builds/releases/download/v3.1.9/VulnScannerX-linux-amd64.zip
-curl -LO https://github.com/Strangenees/VulnScannerX-builds/releases/download/v3.1.9/SHA256SUMS.txt
+curl -LO https://github.com/Strangenees/VulnScannerX-builds/releases/download/v3.1.10/VulnScannerX-linux-amd64.zip
+curl -LO https://github.com/Strangenees/VulnScannerX-builds/releases/download/v3.1.10/SHA256SUMS.txt
 sha256sum -c SHA256SUMS.txt
 ```
 
@@ -101,7 +101,7 @@ sha256sum -c SHA256SUMS.txt
 以下示例以 `Linux amd64` 包为例：
 
 ```bash
-curl -LO https://github.com/Strangenees/VulnScannerX-builds/releases/download/v3.1.9/VulnScannerX-linux-amd64.zip
+curl -LO https://github.com/Strangenees/VulnScannerX-builds/releases/download/v3.1.10/VulnScannerX-linux-amd64.zip
 unzip VulnScannerX-linux-amd64.zip
 chmod +x VulnScannerX-linux-amd64
 ./VulnScannerX-linux-amd64 version
@@ -125,7 +125,7 @@ VulnScannerX 在运行时可查看版本、提交号和构建时间：
 
 ```text
 VulnScannerX 版本信息:
-  版本: v3.1.9
+  版本: v3.1.10
   提交: 1a2b3c4
   构建时间: 2026-01-27T12:34:56Z
 ```
